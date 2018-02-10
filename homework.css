@@ -1,36 +1,97 @@
-body {
-    background-color: white;
-}
-.logo {
-    width: 209px;
-    position: relative;
-    top: 1px;
-    left: 550px;
-}
-
-nav {
-   background: rgb(3, 18, 158);
-   height: 125px;
-}
-
-.navhome {
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
-    display:;
-
-}
-.firstmaindiv {
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
     height: auto;
-    width: auto;
-    background-image: url(https://www.government.nl/binaries/large/content/gallery/government/attentie-afbeeldingen/home/2017/tourists-dam-square-hero-330.jpg);
-}
-
-.topnav {
-    overflow: hidden;
+    overflow-x: hidden;
     
 }
-.topnav a {
+.logo {
+    width: 320px;
+    position: relative;
+    top: -7px;
+    left: 630px;
+}
+
+
+
+/* here starts the nav section*/
+.navhome {
+    width: 100%;
+    /*here I specify I want to take the whole screen width*/
+}
+
+.navhome ul {
+    list-style: none;
+    display: flex;
+    background-color: #01689B;
+    height: 45px;
+    padding-top: 25px;
+    margin-bottom: 0;
+}
+
+.navhome ul li a {
+    margin: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+#home {
+    width: 40%;
+    margin-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+
+/*here ends the nav section */
+
+.backimg {
+    background-image: url(https://www.government.nl/binaries/large/content/gallery/government/attentie-afbeeldingen/home/2017/tourists-dam-square-hero-330.jpg);
+    background-size: 1370px 370px;
+    background-repeat: no-repeat;
+}
+
+.firstmainsearch {
+    display: flex;
+    width: auto;
+    height: 300px;
+    padding: 20px;
+}
+.secmainsearch {
+    background: white;
+    width: 28%;
+    height: 86%;
+    margin-left: 50px;
+    color: #315984;
+    padding: 10px;
+    
+}
+.secmainsearch ul {
+    list-style: none;
+    font-size: 19px;
+    font-weight: bold;
+}
+.secmainsearch ul li {
+    margin: 8px;
+    font-weight: bold;
+    margin-left: -15px;
+}
+
+.secmainsearch ul li a {
+    text-decoration: none;
+    color: #315984;
+}
+/*below I will add info for searchbar*/
+.searchbar {
+    overflow: hidden;
+    background-color: none;
+}
+.searchbar a {
     float: left;
     display: block;
     color: black;
@@ -39,15 +100,32 @@ nav {
     text-decoration: none;
     font-size: 17px;
 }
-
+.searchbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.searchbar a.active {
+    background-color: #2196F3;
+    color: white;
+}
+.searchbar input[type=looking] {
+    float: left;
+    padding: 14px;
+    border: none;
+    width: 290px;
+    margin-top: 3px;
+    margin-left: 500px;
+    font-size: 17px;
+}
+/*below I will add the second main section*/
 .main-grid-item {
-    width: 24%;
+    width: 23%;
     height: 200px;
-    margin: 1px;
-    padding: 1px;
+    margin: 0px;
+    padding: 6px;
     list-style: none;
     border: 1px;
-    background: white;
+    background: rgb(250, 250, 253);
 }
 #main-grid-floats {
     width: 94%;
@@ -66,7 +144,7 @@ nav {
     border: 1px;
 }
 #grid-floats {
-    width: 94%;
+    width: 80%;
     margin: auto;
     display: block;
     justify-content: space-between;
@@ -74,45 +152,193 @@ nav {
 #grid-floats li {
     float: left;
 }
-footer {
-    background: rgb(3, 18, 158);
-}    
-
 h2 {
-    color: black;
-    left: 50px;
+    color:#01689B;
     
-}
-.funnyletter {
-    color: rgb(3, 18, 158);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 23px;
-    align-self: center;
 }
 p {
-    color: black
-    height: 150px;
-    padding: 10px;
-    font-weight: normal;
-    font-size: 20px;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-.date {
     color: black;
-    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
-    font-size: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+/*here ended the second main section*/
+.spotlight {
+    display: flex;
+}
+.spotlight div {
+    width: 45%;
+    height: 50%;
+    line-height: 22px;
+    margin: 0.7%;
+    padding: 10px;
+    font-size: 18px;
+    font-family: Calibri;
+}
+.spotlight div img {
+    width: 95%;
+    height: 80%;
+    line-height: 22px;
+    margin: 0.7%;
+    padding: 5px;
+}
+
+/*here end the spotlight section */
+/*here begings the news section */
+.fancy-title {
+    font-family: Calibri;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 75px;
+    margin-top: 70px;
+}
+.news-grid-item {
+    width: 31%;
+    height: 250px;
+    margin: 6px;
+    padding: 6px;
+    list-style: none;
+    border: 1px;
+    background: white;
+}
+#news-grid-floats {
+    width: 94%;
+    margin: auto;
+    display: block;
+    justify-content: space-between;
+}
+#news-grid-floats li {
+    float: left;
+}
+.news-item {
+    width: 33%;
+    height: 300px;
+    margin: 10px;
+    padding: 1px;
+    border: 1px;
+}
+#news-floats {
+    width: 80%;
+    margin: auto;
+    display: block;
+    justify-content: space-between;
+}
+#news-floats li {
+    float: left;
+}
+.bold-date {
     font-weight: bold;
 }
-.questions {
-    overflow: hidden;
-    background-color: #e9e9e9;
+.more-news {
+    font-family: Calibri;
+    color: #01689B;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 70px;
 }
-.questions a {
-        float: left;
-        display: block;
+.questions {
+    
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+}
+.questions {
+        width: 20%;
+        line-height: 15px;
+        margin: 3%;
+        padding: 10px;
+        font-size: 25px;
+        font-family: Calibri;
+        border: #CBD2E3 solid 3px;
         text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
+}
+#con {
+    font-family: Calibri;
+    font-size: 20px;
+    color: black;
+}
+
+/*here ends the news section and the footer begins*/
+footer {
+    margin-top: 50px;
+    background: #01689B;
+    height: 40%;
+    width: 100%;
+}
+.sec-foot {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    line-height: 30px;
+    margin: 3%;
+    padding: 20px;
+    font-size: 18px;
+    font-family: Calibri;
+}
+li {
+    list-style: none;
+}
+
+
+.column ul li a {
+    color: white;
+}
+
+.column {
+    margin-bottom: -40px;
+    margin-left: 280px;
+}
+#third-foot {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 350px;
+}
+
+.foot-header {
+    font-size: 25px;
+}
+/*here the footer ends and the language section begins*/
+.last {
+        height: 20%;
+        width: 100%;
+}
+.last-lang-info {
+    margin-left: 29%;
+}
+.last-lang-info ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 35px;
+}
+.english {
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    border: white solid 3px;
+    margin-top: 6px;
+    font-family: Calibri;
+}
+.language {
+    border: #B2D7EE solid 1px;
+    margin-left: 15px;
+    padding: 1%
+}
+.language a {
+    color: #1D8ACD;
+    font-family: Calibri;
+    font-size: 17px;
+}
+/*here ends the language section, the ideas for footer and language sections I took from Aya*/
+/*here beggins the @media queries section*/
+@media screen (min-width: 375px) and (max-width: 667px) {
+
+}
+@media screen (min-width: 668px) and (max-width: 991px) {
     
 }
+@media screen (min-width: 992px) {
+    
+}
+
