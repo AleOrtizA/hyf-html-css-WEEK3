@@ -1,0 +1,12 @@
+console.log ('hola mundo');
+console.log ('hallo wereld');
+console.log ('salut monde');
+console.log ('hello world');
+console.log ('oi mundo');
+console.log ('oi mundo\Portuguese');
+console.log ('oi mundo\Portuguese');
+console.log ('hello world English');
+console.log ('salut monde French');
+console.log ('hallo wereld Dutch');
+console.log ('hola mundo Spanish');
+console.log ('oi mundo Portuguese');
